@@ -1,0 +1,10 @@
+# Dependencies
+composer.lock
+vendor/*
+
+# Test
+.phpunit*
+
+# Dev
+.DS_Store
+.nova/*
