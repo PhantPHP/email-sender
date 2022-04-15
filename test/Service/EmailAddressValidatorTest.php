@@ -5,21 +5,21 @@ namespace Test\Service;
 use PHPUnit\Framework\TestCase;
 
 use Phant\DataStructure\Web\EmailAddress;
-use Phant\EmailSender\Service\EmailAddressValiditator;
+use Phant\EmailSender\Service\EmailAddressValidator;
 
-final class EmailAddressValiditatorTest extends TestCase
+final class EmailAddressValidatorTest extends TestCase
 {
 	public function testCheckTrashMailBoxService(): void
 	{
 		$this->assertIsBool(
-			(new EmailAddressValiditator())
+			(new EmailAddressValidator())
 				->checkTrashMailBoxService(
 					'username@domain.ext'
 				)
 		);
 		
 		$this->assertIsBool(
-			(new EmailAddressValiditator())
+			(new EmailAddressValidator())
 				->checkTrashMailBoxService(
 					new EmailAddress('username@domain.ext')
 				)
@@ -29,14 +29,14 @@ final class EmailAddressValiditatorTest extends TestCase
 	public function testCheckMxServer(): void
 	{
 		$this->assertIsBool(
-			(new EmailAddressValiditator())
+			(new EmailAddressValidator())
 				->checkMxServer(
 					'username@domain.ext'
 				)
 		);
 		
 		$this->assertIsBool(
-			(new EmailAddressValiditator())
+			(new EmailAddressValidator())
 				->checkMxServer(
 					new EmailAddress('username@domain.ext')
 				)

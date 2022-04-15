@@ -14,15 +14,15 @@ PHP >= 8.0
 ### E-mail address validity checker
 
 ```php
-use Phant\EmailAddress\Service\ValidityChecker;
+use Phant\EmailAddress\Service\EmailAddressValidator;
 
-$emailValidityChecker = new EmailValidityChecker();
+$emailAddressValidator = new EmailAddressValidator();
 
-if (!$emailValidityChecker->checkTrashMailBoxService('john.doe@fake-box.com') {
+if (!$emailAddressValidator->checkTrashMailBoxService('john.doe@fake-box.com') {
 	// E-mail address provided by a trash mail box service
 }
 
-if (!$emailValidityChecker->checkMxServer('john.doe@fake-box.com') {
+if (!$emailAddressValidator->checkMxServer('john.doe@fake-box.com') {
 	// E-mail address linked to a domain name without an e-mail server
 }
 ```

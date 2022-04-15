@@ -13,7 +13,7 @@ use Phant\EmailAddress\Error\EmailAddress\{
 	EmailServerNotFound,
 };
 
-class EmailAddressValiditator
+class EmailAddressValidator
 {
 	public function __construct()
 	{
