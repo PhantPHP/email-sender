@@ -31,13 +31,13 @@ final class SendinblueEmailSender implements \Phant\EmailSender\Port\EmailSender
 		
 		$body = [
 			'sender' => [
-				'email' => (string)$email->from->emailAddress,
-				'name' => $email->from->name,
+				'email' => (string)$email->from->getEmailAddress(),
+				'name' => $email->from->getName(),
 			],
 			'to' => [
 				[
-					'email' => (string)$email->to->emailAddress,
-					'name' => $email->to->name,
+					'email' => (string)$email->to->getEmailAddress(),
+					'name' => $email->to->getName(),
 				],
 			],
 			'subject' => $email->subject,
