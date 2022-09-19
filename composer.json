@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "phant/data-structure": "1.*",
+        "phant/data-structure": "3.*",
         "phant/domain-name": "1.*",
         "guzzlehttp/guzzle": "^7.4"
     },
