@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": ">=8.1",
         "phant/data-structure": "4.*",
         "phant/domain-name": "2.*",
         "guzzlehttp/guzzle": "^7.4"
