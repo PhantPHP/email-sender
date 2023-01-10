@@ -6,7 +6,7 @@ namespace Phant\EmailSender\Service;
 
 final class HtmlToText
 {
-    public function _invoke(
+    public function __invoke(
         string $html
     ): string {
         $html = self::removeCodeIndent($html);
