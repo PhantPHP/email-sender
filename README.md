@@ -14,7 +14,7 @@ PHP >= 8.1
 ### E-mail address validity checker
 
 ```php
-use Phant\EmailAddress\Service\EmailAddressValidator;
+use Phant\EmailSender\Service\EmailAddressValidator;
 
 $emailAddressValidator = new EmailAddressValidator();
 
@@ -31,7 +31,7 @@ if (!$emailAddressValidator->checkMxServer('john.doe@fake-box.com') {
 ### E-mail Sender via Sendinblue
 
 ```php
-use Phant\Email\Service\SendinblueEmailSender;
+use Phant\EmailSender\Service\SendinblueEmailSender;
 
 // @todo : Create e-mail with [phant/data-structure](https://github.com/PhantPHP/data-structure)
 
