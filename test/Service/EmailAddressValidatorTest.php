@@ -4,12 +4,10 @@ declare(strict_types=1);
 
 namespace Test\Service;
 
-use PHPUnit\Framework\TestCase;
-
 use Phant\DataStructure\Web\EmailAddress;
 use Phant\EmailSender\Service\EmailAddressValidator;
 
-final class EmailAddressValidatorTest extends TestCase
+final class EmailAddressValidatorTest extends \PHPUnit\Framework\TestCase
 {
     public function testCheckTrashMailBoxService(): void
     {
