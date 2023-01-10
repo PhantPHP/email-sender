@@ -73,7 +73,7 @@ use Phant\EmailSender\Service\HtmlToText;
 
 $html = '';
 
-$text = (new HtmlToText())(html);
+$text = (new HtmlToText)(html);
 
 
 ```
