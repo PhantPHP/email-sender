@@ -2,7 +2,7 @@
     "name": "phant/email-sender",
     "description": "Manage email sending easily",
     "license": "MIT",
-    "keywords": ["email sender manager", "email sender component", "email sender service", "email sender", "sendinblue email sender", "email check", "email checker", "email verify", "email verifier", "email validation"],
+    "keywords": ["email sender manager", "email sender component", "email sender service", "email sender", "email check", "email checker", "email verify", "email verifier", "email validation"],
     "authors": [
         {
             "name": "Lenny ROUANET",

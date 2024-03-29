@@ -104,7 +104,7 @@ final class HtmlToTextTest extends \PHPUnit\Framework\TestCase
             . "\n"
             . "\n"
             . 'The footer',
-            (new HtmlToText)($this->fixture)
+            (new HtmlToText())($this->fixture)
         );
     }
 

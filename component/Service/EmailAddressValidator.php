@@ -9,10 +9,6 @@ use Phant\DomainName\Service\{
     DnsRecord,
     ServiceProvided,
 };
-use Phant\EmailAddress\Error\EmailAddress\{
-    IsTrashMailBoxService,
-    EmailServerNotFound,
-};
 
 class EmailAddressValidator
 {
