@@ -27,19 +27,6 @@ if (!$emailAddressValidator->checkMxServer('john.doe@fake-box.com') {
 }
 ```
 
-
-### E-mail Sender via Sendinblue
-
-```php
-use Phant\EmailSender\Service\SendinblueEmailSender;
-
-// @todo : Create e-mail with [phant/data-structure](https://github.com/PhantPHP/data-structure)
-
-apiKey = '*****.*****';
-
-$sent = (new SendinblueEmailSender($apiKey))->send(email);
-```
-
 ### Html to text
 
 Transform HTML 
