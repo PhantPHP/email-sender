@@ -1,0 +1,10 @@
+{% if metas %}
+<table style="margin:20px 0 0 0;border-collapse:separate;border-spacing:5px;font-size:12px;">
+{% for key, value in metas %}
+<tr>
+	<th align="left" valign="top">{{ key }}</th>
+	<td align="left" valign="top">{{ value }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endif %}
