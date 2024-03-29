@@ -54,13 +54,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 Action : https://domain.ext/path
 ```
 
-
 ```php
 use Phant\EmailSender\Service\HtmlToText;
 
 $html = '';
 
 $text = (new HtmlToText)(html);
-
-
 ```
