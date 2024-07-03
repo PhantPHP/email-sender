@@ -13,6 +13,7 @@ class EmailBuilder
     public const TemplateComponentCta = 'component/cta.twig';
     public const TemplateComponentOtp = 'component/otp.twig';
     public const TemplateComponentMeta = 'component/meta.twig';
+    public const TemplateComponentDivider = 'component/divider.twig';
 
     protected Twig $twig;
 
@@ -79,6 +80,13 @@ class EmailBuilder
             [
                 'metas' => $metas,
             ]
+        );
+    }
+
+    public function buildDivider(
+    ): string {
+        return $this->twig->render(
+            self::TemplateComponentDivider
         );
     }
 }
